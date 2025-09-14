@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { TrendingUp, BarChart3, PieChart, Target, ArrowUpRight, DollarSign, Users, Award } from 'lucide-react';
 import Link from 'next/link';
+import TradeSetups from './trade-setups/page';
 
 const stats = [
   { label: 'Success Rate', value: '87%', icon: Target, color: 'text-emerald-400' },
@@ -88,7 +89,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <TradeSetups/>
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-emerald-900/20 to-green-900/20">
         <div className="max-w-4xl mx-auto text-center">

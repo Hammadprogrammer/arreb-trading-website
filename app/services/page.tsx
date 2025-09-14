@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Check, Star, TrendingUp, BarChart3, PieChart, Shield, Users, Clock } from 'lucide-react';
+import { Check, Star, TrendingUp, BarChart3, PieChart, Shield, Users, Clock, Wallet, Copy, GraduationCap } from 'lucide-react';
 
 const additionalServices = [
   {
@@ -30,15 +30,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Professional Trading Services
-          </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Choose the perfect service package to accelerate your trading success with expert guidance and proven strategies
-          </p>
-        </div>
-
+       
         {/* Services Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
@@ -69,6 +61,25 @@ export default function Services() {
                 description: 'In-depth technical and fundamental market research',
                 icon: TrendingUp,
                 color: 'bg-purple-500/10 text-purple-400'
+              },
+              // New Cards Added Here
+              {
+                title: 'Account Management',
+                description: 'Let me trade your capital with a personalized risk plan.',
+                icon: Wallet,
+                color: 'bg-rose-500/10 text-rose-400'
+              },
+              {
+                title: 'Copy Trading',
+                description: 'Copy my trades directly into your account automatically.',
+                icon: Copy,
+                color: 'bg-orange-500/10 text-orange-400'
+              },
+              {
+                title: '1-on-1 Mentorship',
+                description: 'Personal guidance tailored to improve your trading.',
+                icon: GraduationCap,
+                color: 'bg-yellow-500/10 text-yellow-400'
               },
             ].map((service, index) => (
               <Card key={index} className="bg-gray-800/30 border-gray-700 hover:bg-gray-800/50 transition-all duration-300 group">

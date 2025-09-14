@@ -14,7 +14,7 @@ const tradeSetups = [
     stopLoss: '1.0800',
     takeProfit: '1.0920',
     riskReward: '1:1.4',
-    status: 'Active',
+    status: 'Running',
     confidence: 85,
     analysis: 'Strong bullish momentum with RSI oversold bounce',
     timestamp: '2 hours ago'
@@ -78,7 +78,7 @@ export default function TradeSetups() {
                   <Badge 
                     variant="outline" 
                     className={
-                      trade.status === 'Active' ? 'border-emerald-500 text-emerald-400' :
+                      trade.status === 'Running' ? 'border-emerald-500 text-emerald-400' :
                       trade.status === 'Completed' ? 'border-blue-500 text-blue-400' :
                       'border-yellow-500 text-yellow-400'
                     }

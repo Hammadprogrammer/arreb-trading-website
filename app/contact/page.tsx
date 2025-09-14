@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MessageCircle, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MessageCircle, MapPin, Clock, Send, Instagram, Twitter, Facebook, Youtube, Linkedin } from 'lucide-react';
 
 const contactMethods = [
   {
@@ -24,12 +24,12 @@ const contactMethods = [
     bgColor: 'bg-blue-500/10'
   },
   {
-    title: 'Telegram',
-    description: 'Join our trading community',
-    contact: '@AreebTraders',
-    icon: MessageCircle,
-    color: 'text-purple-400',
-    bgColor: 'bg-purple-500/10'
+    title: 'WhatsApp', // Changed from Telegram to WhatsApp
+    description: 'Get in touch on WhatsApp',
+    contact: '+1 (555) 123-4567', // Replace with actual WhatsApp number if different
+    icon: MessageCircle, // Using MessageCircle icon for WhatsApp as well, or you can find a specific WhatsApp icon if available in lucide-react or another library
+    color: 'text-green-400',
+    bgColor: 'bg-green-500/10'
   },
   {
     title: 'Office',
@@ -39,6 +39,15 @@ const contactMethods = [
     color: 'text-orange-400',
     bgColor: 'bg-orange-500/10'
   },
+];
+
+const socialMediaLinks = [
+  { icon: Instagram, url: 'https://www.instagram.com/your_instagram_handle' },
+  { icon: Twitter, url: 'https://www.twitter.com/your_twitter_handle' },
+  { icon: Facebook, url: 'https://www.facebook.com/your_facebook_page' },
+  // Add other social media links as needed, e.g.:
+  // { icon: Youtube, url: 'https://www.youtube.com/your_youtube_channel' },
+  // { icon: Linkedin, url: 'https://www.linkedin.com/your_linkedin_profile' },
 ];
 
 const businessHours = [
@@ -150,6 +159,21 @@ export default function Contact() {
                 </form>
               </CardContent>
             </Card>
+            
+            {/* Social Media Icons */}
+            <div className="mt-8 text-center">
+              <h3 className="text-white font-bold text-lg mb-4">Follow Us</h3>
+              <div className="flex justify-center space-x-6">
+                {socialMediaLinks.map((link, index) => {
+                  const IconComponent = link.icon;
+                  return (
+                    <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">
+                      <IconComponent className="h-7 w-7" />
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* Contact Information */}

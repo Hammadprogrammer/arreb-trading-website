@@ -6,24 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Clock, TrendingUp, AlertCircle, ExternalLink } from 'lucide-react';
 
 const newsItems = [
-  {
-    id: 1,
-    title: 'According to this Monad, the Monad Exchange in Russia has halted',
-    category: 'Breaking',
-    time: '2 hours ago',
-    priority: 'high',
-    description: 'Major cryptocurrency exchange operations suspended in Russia following regulatory concerns.',
-    source: 'CryptoNews'
-  },
-  {
-    id: 2,
-    title: 'Volvo Recalls 1,545 Vehicles in the U.S. Due to Seatbelt',
-    category: 'Market',
-    time: '4 hours ago',
-    priority: 'medium',
-    description: 'Automotive recall affects market sentiment as safety concerns impact stock prices.',
-    source: 'MarketWatch'
-  },
+ 
+
   {
     id: 3,
     title: 'Federal Reserve Signals Potential Rate Changes',
@@ -62,7 +46,7 @@ const newsItems = [
   }
 ];
 
-const categories = ['All', 'Breaking', 'Market', 'Crypto', 'Economics', 'Commodities'];
+const categories = ['All', 'Crypto', 'Economics', 'Commodities'];
 
 export default function News() {
   return (
