@@ -58,6 +58,7 @@ export default function Partnership() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent mb-4">
             MEXC Partnership
+            
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Official Key Opinion Leader partnership with MEXC Global - Building trust and growing the crypto community
